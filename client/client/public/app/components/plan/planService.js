@@ -1,0 +1,1 @@
+"use strict";myApp.service("planService",["$http","$cookies",function(e,t){this.getPlan=function(n,i){var a=getNewKeyAndTimeStamp(),o=t.get("token"),r={url:api.url+"api/plan",method:"GET",params:{t:a.t,k:a.k},headers:{"Content-Type":"application/x-www-form-urlencoded",authorization:"bearer "+o}};e(r).then(function(e){n(e)},function(e){i(e)})}}]);

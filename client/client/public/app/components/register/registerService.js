@@ -1,0 +1,1 @@
+"use strict";myApp.service("registerService",["$http",function(e){return{Register:function(t,r,n){var a=getNewKeyAndTimeStamp(),i={url:api.url+"api/user",method:"POST",data:$.param({k:a.k,t:a.t,username:t.username,email:t.email,password:t.password,phone:t.phone}),headers:{"Content-Type":"application/x-www-form-urlencoded"}};e(i).then(function(e){r(e)},function(e){n(e)})}}}]);

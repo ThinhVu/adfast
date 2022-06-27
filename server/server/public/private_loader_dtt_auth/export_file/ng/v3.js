@@ -1,0 +1,1 @@
+Elpis.Msisdn={detect:function(){}}

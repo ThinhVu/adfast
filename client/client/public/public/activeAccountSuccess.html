@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="main" style="margin-top: 180px; text-align: center;margin-left:50px;margin-right:50px;">
+    <% if (demo == 'ok'){ %>
+    <h2>Kích hoạt tài khoản thành công, vui lòng bấm vào <a href="http://WeMobile.tech/login">đây để đăng nhập</a></h2>
+    <% } else if(demo == 'time-out') { %>
+    <h3>Liên kết kích hoạt lỗi hoặc thời gian kích hoạt tài khoản đã vượt quá 3 ngày! Vui lòng kích hoạt lại tài
+        khoản từ hệ
+        thống
+        WeMobile
+        hoặc
+        liện
+        hệ bộ phận support để được hỗ trợ!</h3>
+    <% } else{ %>
+    <h3>Kích hoạt thất bại! Link kích hoạt không hợp lệ! Bạn vui lòng liên hệ bộ phân hỗ trợ WeMobile theo Số điện
+        thoại bên dưới để được hỗ trợ!</h3>
+    <% } %>
+    <p style="font-style: italic;color: #9e0505;font-weight: bold;">WeMobile Mobile Solution: Giải pháp cung cấp số điện
+        thoại truy cập
+        chính xác hàng
+        đầu!</p>
+</div>
+<div class="main-footer white footer-auth" style="position: absolute;bottom: 0;width: 100%;">
+    <div class="container">
+        <div class="column logo contact hidden-xs">
+            <a href="/">
+                <img src="assets/img/mobile-phone.png">
+            </a>
+        </div>
+        <div class="column contact">
+            <img src="assets/img/icon-mail.png"><br>
+            <p>wemobile.crm@gmail.com</p>
+        </div>
+        <div class="column contact">
+            <img src="assets/img/icon-phone.png"><br>
+            <p>0166.337.0342</p>
+        </div>
+        <div class="column contact  hidden-xs">
+            <img src="assets/img/icon-address.png"><br>
+            <p>Duy Tân - Cầu Giấy - Hà Nội</p>
+        </div>
+        <div class="column joinwithus hidden-xs">
+            <strong style="color: black">Join us on</strong>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/1191206590914518/" target="_blank">
+                        <img src="assets/img/facebook-grey.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/google-grey.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/instagram-grey.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/youtobe.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

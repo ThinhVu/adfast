@@ -1,0 +1,88 @@
+<div class="header-wrapper">
+    <header-template></header-template>
+</div>
+<div id="wrapper">
+
+    <div class="header" style="height: 64px;">
+
+
+    </div>
+    <!-- Sidebar -->
+    <sidebar-template></sidebar-template>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="first-page-bar">
+
+            <h3><span class="fa fa-list"></span> Thông tin các phiên giao dịch</h3>
+        </div>
+        <div class="filter-page">
+
+            <div class="selection">
+                <div class="form-group">
+                    <label for>Ngày bắt đầu</label>
+                    <input type="text" class="form-control datepicker" placeholder="Nhập từ khoá"
+                           ng-model="startDate">
+                </div>
+            </div>
+            <div class="selection">
+                <div class="form-group">
+                    <label for=>Ngày kết thúc</label>
+                    <input type="text" class="form-control datepicker" placeholder="Nhập từ khoá" ng-model="endDate">
+                </div>
+            </div>
+            <div class="selection selection-button">
+                <button class="btn btn-primary" ng-click="changeFilterValue()">
+                    <i class="fa fa-filter button-icon" aria-hidden="true"></i>Lọc
+                </button>
+                <button class="btn btn-danger" ng-click="removeFilter()">
+                    <i class="fa fa-times button-icon" aria-hidden="true"></i>Huỷ
+                </button>
+
+            </div>
+            <script>
+                $(function () {
+                    $(".datepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+                });
+            </script>
+        </div>
+        <div class="clear-fix"></div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Số tiền</th>
+                <th>Nội dung</th>
+                <th>Ngày giao dịch</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr dir-paginate="trans in siteInformation.transactionGet | toArray | filter: filterByDate(filter)
+            | itemsPerPage: 10 as result  track by $index">
+                <td>{{$index+1}}</td>
+                <td><span> {{trans.amount | currency:"":0}} VNĐ</span></td>
+
+                <td><span>{{ trans.message}}</span></td>
+                <td><span>{{ trans.createdAt | date: 'dd-MM-yyyy'}}</span></td>
+            </tr>
+            <tr>
+                <td colspan="4" ng-if="result.length==0">Không có kết quả</td>
+            </tr>
+            </tbody>
+        </table>
+        <dir-pagination-controls
+            boundary-links="true"
+            on-page-change="pageChangeHandler(newPageNumber, oldPageNumber)"
+            template-url="assets/libs/angularUtils-pagination/dirPagination.tpl.html">
+
+        </dir-pagination-controls>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<footer-template></footer-template>
+
+

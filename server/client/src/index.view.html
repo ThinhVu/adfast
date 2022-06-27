@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>Blog FullStack</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.style.css">
+
+
+    <!--<link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>-->
+</head>
+<body ng-app="appRouter">
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="index">Routing Angularjs</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="home"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li><a ui-sref="about"><i class="fa fa-shield"></i> About</a>
+                </li>
+                <li><a ui-sref="contact"><i class="fa fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="main" class="container-fluid">
+    <ui-view></ui-view>
+</div>
+
+<img src="assets/img/photo-main.jpg" height="480" width="640"/>
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/libs/angular/angular.js"></script>
+<script src="assets/libs/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<script src="app.controller.js"></script>
+<script src="app.config.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<header style="background-color: transparent" class="header-login-register" ng-controller="dialogController">
+    <div class="logo">
+        <a href="/site"><span class="glyphicon glyphicon-home" style="font-size: 1.4em; color: #fff"> WeMobile</span></a>
+    </div>
+    <div class="right-menu">
+        <ul class="toggle-menu">
+            <li toggle-menu>
+                <button title="Ẩn hiện menu" class="btn btn-default" style="padding: 5px 10px">
+                    <i class="fa fa-reorder" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <a href="/logout">
+                <button title="Đăng xuất" class="btn btn-default" style="padding: 5px 10px">
+                    <span style="color: black;"  class="fa fa-sign-out"
+                       aria-hidden="true"></span></button></a>
+            </li>
+            <li style="padding-right: 20px;"><a href="#"
+                                                data-toggle="dropdown"
+                                                aria-expanded="false">
+                <i class="glyphicon glyphicon-user"></i> {{siteInformation.userInformation._user.username}}</a>
+                <div class="dropdown-menu">
+                    <div>Email: {{siteInformation.userInformation._user.email}}</div>
+                    <div>SĐT: {{siteInformation.userInformation._user.phone}}</div>
+                    <div>Số tiền dư: {{siteInformation.userInformation._user.budget}}</div>
+                    <div>Số điện thoại còn lại: {{siteInformation.userInformation.phoneRemain}}</div>
+                    <div>Ngày hết hạn: {{siteInformation.userInformation.dateExpire | date: 'dd/MM/yyyy'}}</div>
+                    <div class="dropdown-divider"></div>
+                    <a ng-click="showDialog(changePasswordUrl)" class="btn btn-primary" style="width:240px;">Đổi mật
+                        khẩu</a>
+                </div>
+                <script>
+									$(document).on('click', '.right-menu .dropdown-menu', function (e) {
+										e.stopPropagation();
+									})
+                </script>
+            </li>
+            <li>
+            </li>
+        </ul>
+    </div>
+</header>

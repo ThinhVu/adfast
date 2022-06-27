@@ -1,0 +1,1 @@
+"use strict";var myApp=angular.module("myApp",["ui.router","ngCookies","ngTagsInput","angular-toArrayFilter","angularUtils.directives.dirPagination","vcRecaptcha"]);myApp.run(["$rootScope","$state","$stateParams",function(a,t,r){a.$state=t,a.$stateParams=r}]);

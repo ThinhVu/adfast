@@ -1,0 +1,108 @@
+<div class="header-wrapper">
+	<header-template></header-template>
+</div>
+<div id="wrapper">
+	<div class="header" style="height: 64px;">
+	</div>
+	<sidebar-template></sidebar-template>
+	<div id="page-content-wrapper">
+		<div class="first-page-bar">
+			<h3><span class="fa fa-list"></span> Thông tin các truy cập</h3>
+		</div>
+		<div class="filter-page">
+			<div class="selection">
+				<div class="form-group">
+					<label>Lọc theo tên trang </label>
+					<select style="width: 100%" class="form-control" ng-model="currentSite"
+					        ng-change="getTraffic(currentSite)">
+						<option ng-selected="true" value="">Tất cả</option>
+						<option ng-repeat="a in siteInformation.siteGet">
+							{{a.name}}
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="selection" style="width:155px;">
+				<div class="form-group">
+					<label>Lọc theo nhà mạng </label>
+					<select style="width: 100%" class="form-control" ng-model="currentCarrier"
+					        ng-change="getTraffic(currentSite)">
+						<option ng-selected="true" value="">Tất cả</option>
+						<option value="Viettel">Viettel</option>
+						<option value="MobiPhone">MobiPhone</option>
+						<option value="Vinaphone">Vinaphone</option>
+					</select>
+				</div>
+			</div>
+			<div class="selection" style="width:165px;">
+				<div class="form-group">
+					<label>Số bản ghi mỗi trang </label>
+					<select style="width: 100%" class="form-control" ng-model="siteInformation.itemPerPage"
+					        ng-change="getTraffic(currentSite)">
+						<option ng-selected="true" value="15">15</option>
+						<option value="30">30</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+			</div>
+			<div class="selection selection-button" style="width: 280px;">
+				<button class="btn btn-primary" ng-click="exportData()" style="margin-right: 20px;">
+					<i class="fa fa-file-excel-o button-icon" aria-hidden="true"></i>Xuất trang
+				</button>
+				<button class="btn btn-primary" ng-click="exportData('all')">
+					<i class="fa fa-file-excel-o button-icon" aria-hidden="true"></i>Xuất tất cả
+				</button>
+			</div>
+		</div>
+		<div class="clear-fix"></div>
+		<dir-pagination-controls
+			max-size="12"
+			boundary-links="true"
+			on-page-change="pageChangeHandler(newPageNumber, oldPageNumber)"
+			template-url="assets/libs/angularUtils-pagination/dirPagination.tpl.html">
+		</dir-pagination-controls>
+		<div id="exportable">
+			<table class="table table-bordered table-striped table-hover fixed-table">
+				<thead>
+				<tr>
+					<th class="sttColumn">STT</th>
+					<th>Số điện thoại</th>
+					<th>Nhà mạng</th>
+					<th>Địa điểm</th>
+					<th>Url trang</th>
+					<th>Hệ Điều Hành</th>
+					<th>Thiết Bị</th>
+					<th>Truy cập gần nhất</th>
+					<th>Số lượt truy cập</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr dir-paginate="traffics in siteInformation.trafficGet | itemsPerPage: siteInformation.itemPerPage as results"
+				    current-page="currentPage">
+					<td class="sttColumn">{{$index+1+(currentPage-1)*siteInformation.itemPerPage}}</td>
+					<td>{{traffics.phone}}</td>
+					<td>{{traffics.carrier}}</td>
+					<td title="{{traffics.city}}">{{traffics.city}}</td>
+					<td title="{{traffics._site.name}}">{{traffics._site.name}}</td>
+					<td>{{traffics.os}}</td>
+					<td>{{traffics.mobile}}</td>
+					<td>{{traffics.requestTime | date: 'dd-MM-yyyy HH:mm:ss'}}</td>
+					<td>{{traffics.accessNumber}}</td>
+				</tr>
+				<tr>
+					<td colspan="7" ng-if="results.length==0">Không có kết quả</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<dir-pagination-controls
+			max-size="12"
+			boundary-links="true"
+			on-page-change="pageChangeHandler(newPageNumber, oldPageNumber)"
+			template-url="assets/libs/angularUtils-pagination/dirPagination.tpl.html">
+		</dir-pagination-controls>
+		<div class="clear-fix"></div>
+	</div>
+</div>
+<div id="exportable-all"></div>
+<footer-template></footer-template>

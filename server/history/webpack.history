@@ -1,0 +1,40 @@
+Webpack-History version: 1
+- Thiết lập chạy webpack trên 2 môi trường
+
+ //=DEVELOPER=======================================================================
+ + Môi trường dev: webpack-dev-server (Được set up với npm run dev)
+ Mô tả: Môi trường này ta sẽ chỉ test và nhìn các cấu hình trên đường link
+ http://localhost:8080/webpack-dev-server để xem nội dung các tập tin bị thay đổi, chú ý
+ các nội dung ở danh mục này không ghi ra các file budle lên project, vì vậy ta chỉ xem trước
+ được mà thôi,, muốn chạy và bundle để triển khai thật, bắt buộc ta phải chạy webpack (chế độ product)
+
+ //=PRODUCTION======================================================================
+ + Môi trường product: webpack (Được setup với npm run build trong package.json).
+ Chế độ này cho phép triển khai budle file và chạy thật,,, file được bundle sẽ được ghi ra như trong
+ output được setup ở webpack config
+
+ //============================*********============================================
+ TRIỂN KHAI WEBPACK VỚI CÁC MODULE
+ +Ulgilify: Nén file Javascript
+ + Các module loader
+    - Css-loader
+    - babel-loader: Chuyển es6, type-script,coffee-script => es5
+
+ + Giải thích các tham số
+    - "build": "webpack --process --color --config webpack.config.prod.js",
+    - "dev": "webpack-dev-server --inline --process --color --config webpack.config.dev.js"
+    Trong đó:
+        . webpack: triển khai trên môi trường production
+        . webpack-dev-server: triển khai trên môi trường develop
+        . --process: Hiển thị phần trăm khi chạy
+        . --color: Hiển thị màu khi complie webpack
+        . --inline: để xóa thanh bar trong chế độ webpack-dev-server, khi đó ta có thể truy cập
+        http://localhost:8080 và sẽ không thấy thanh bar nữa
+
+
+Liên kết tham khảo
+- Sử dụng strip-loader và basic cho beginer webpack
+    https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a3638460#.4almfcv9e
+- Run Project sẽ kết hợp với gulp-default để copy source html
+
+- thu vien libs chi dung khi nao can import du lieu vao cac file khac nhau ma thoi

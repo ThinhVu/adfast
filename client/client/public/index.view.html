@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title ng-bind="$state.current.data.pageTitle==null?'WeMobile':$state.current.data.pageTitle"></title>
+    <link rel="stylesheet" href="assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/ng-tags-input/ng-tags-input.min.css">
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/home-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+<div class="modal fade" id="changePassModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     ng-controller="changePassword">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-table-cell">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Thay đổi mật khẩu</h4>
+                </div>
+                <form name="formChangePass" ng-submit="changePassword(captcha)">
+                    <div class="modal-body">
+                        <div class="table-login-content">
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control"
+                                       ng-model="userCurentPass"
+                                       required/>
+                            </div>
+                            <div class="form-group">
+                                <label>Password mới</label>
+                                <input type="password" class="form-control"
+                                       id="pass"
+                                       ng-model="userNewPass"
+                                       required/>
+                            </div>
+                            <div class="form-group">
+                                <label>Xác nhận password</label>
+                                <input type="password" class="form-control"
+                                       id="reEnter"
+                                       ng-model="userReEnterPass"
+                                       required/>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcokBEUAAAAAFc5dauUvHiSHtpte3FRPsYBAj1v"
+                                 ng-model="captcha"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Xác nhận</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="loading"></div>
+<div class="fixed-content">
+    <div class="notification">
+        <div class="alert alert-danger errorNotification"></div>
+        <div class="alert alert-success successNotification"></div>
+    </div>
+</div>
+<div id="main">
+    <ui-view></ui-view>
+</div>
+<script src="assets/libs/jquery/dist/jquery.js"></script>
+<script src="assets/js/xlsx.core.min.js"></script>
+<script src="assets/js/FileSaver.js"></script>
+<script src="assets/js/tableexport.js"></script>
+<script
+    src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit"
+    async defer
+></script>
+<script src="assets/libs/jquery-ui/jquery-ui.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/js/md5.js"></script>
+<script src="assets/libs/bootbox.js/bootbox.js"></script>
+<script src="assets/libs/moment/moment.js"></script>
+<script src="assets/libs/angular/angular.js"></script>
+<script src="assets/libs/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="assets/libs/angular-cookies/angular-cookies.js"></script>
+<script src="assets/libs/ng-tags-input/ng-tags-input.js"></script>
+<script src="assets/libs/angular-toArrayFilter/toArrayFilter.js"></script>
+<script src="assets/libs/angularUtils-pagination/dirPagination.js"></script>
+<script src="assets/libs/angular-recaptcha/release/angular-recaptcha.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/shared/function/validatingFunction.js"></script>
+<script src="app/shared/function/commonFunction.js"></script>
+<script src="app/shared/config/config.js"></script>
+<script src="app/shared/directives/shareDirective.js"></script>
+<script src="app/shared/services/authenticationService.js"></script>
+<script src="app/components/login/loginService.js"></script>
+<script src="app/components/register/registerService.js"></script>
+<script src="app/components/site/siteService.js"></script>
+<script src="app/components/plan/planService.js"></script>
+<script src="app/components/transaction/transactionService.js"></script>
+<script src="app/components/traffic/trafficService.js"></script>
+<script src="app/components/user/userPasswordService.js"></script>
+<script src="app/components/login/loginController.js"></script>
+<script src="app/components/register/registerController.js"></script>
+<script src="app/components/site/siteController.js"></script>
+<script src="app/components/plan/planController.js"></script>
+<script src="app/components/transaction/transactionController.js"></script>
+<script src="app/components/traffic/trafficController.js"></script>
+<script src="app/components/user/userPasswordController.js"></script>
+<script src="app/shared/controllers/dialogController.js"></script>
+<script src="app/shared/controllers/changePassController.js"></script>
+<script src="app/components/priceshow/priceController.js"></script>
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/587d7ece1855346ccc7bbc2d/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+</body>
+</html>

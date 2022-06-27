@@ -1,0 +1,79 @@
+//===================================================================================================
+{
+  "Author": "ManhNV11",
+  "Date-Create": "20-10-2016",
+  "Check-Style": [
+    "ESLint",
+    "JSHint",
+    "CSSLint"
+  ],
+  "Technical": {
+    "Node-JS": "lattes",
+    "Mongodb": "lattes",
+    "Structure": "MeanStack",
+  },
+  "Performance": {
+    "gulp": "lattes",
+    "webpack": "lattes"
+  },
+  "Standard": "ECMAScript 6-7",
+  "module-ECMAScript 7": "async-function",
+  "async-module-support":["babel-plugin-syntax-async-functions"
+    , "babel-plugin-transform-regenerator"]
+  "Security": {
+    "token-authenticate": {
+      "crsf": "lattes",
+      "json-web-token": "latest"
+    }
+  },
+  "NODE_ENV": {
+    "production": "ecosystem_production",  //support build pm2 with environment product
+    "development": "ecosystem_development" //support build pm2 with environment develop
+  },
+  "DevTool-Manager": [
+    "PM2 integrate KEY-METRIC",
+    "FOREVER"
+  ],
+  "Client-History":[
+    "Router": "ui.router",
+    "angular-version": 1.5.8
+  ]
+}
+
+//===================================================================================================
+Check syntax JSHint and ESLint
+Note:
+    + Change "esversion": 5 =>"esversion": 6
+    + Change "node": false => "node": true
+ - support: es7-function async
+    "plugins": [
+        "syntax-async-functions",
+        "transform-regenerator"
+    ]
+
+//===================================================================================================
+Server description:
+    Node-server
+    Author: ManhNV11
+        + domain: 'not buy'      -port: 80 (fullStack developer with mean stack)
+            - description: process, security, authenticate (passport and token), render-file, router
+            high perform (minify, server auto load, check syntax ..vv)
+
+//===================================================================================================
+Client description:
+    Angular and Jquery developer
+    Author: ManhNV11
+        description: write front end code
+          + design: bootstrap, jquery, ..
+          + binding data: MVC, router, upload album.
+
+//===================================================================================================
+Security:
+    bruteForce.prevent : Chống lượt quá
+
+// ========================================
+Run environment to pm2
+    pm2 start ecosystem_production.json
+    pm2 start ecosystem_development.json
+
+config môi trường phát triển

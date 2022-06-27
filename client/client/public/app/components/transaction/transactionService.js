@@ -1,0 +1,1 @@
+"use strict";myApp.service("transactionService",["$http","$cookies",function(t,e){this.getTransaction=function(n,i){var a=getNewKeyAndTimeStamp(),o=e.get("token"),r={url:api.url+"api/transaction",method:"GET",params:{t:a.t,k:a.k},headers:{"Content-Type":"application/x-www-form-urlencoded",authorization:"bearer "+o}};t(r).then(function(t){n(t)},function(t){i(t)})}}]);

@@ -1,0 +1,242 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-table-cell">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Thêm website mới</h4>
+                </div>
+
+                <form ng-submit="createSite()">
+                    <div class="modal-body">
+                        <table>
+                            <div class="form-group">
+                                <label for="usr">Tên website</label>
+                                <input type="text" class="form-control" id="usr" ng-model="name">
+                            </div>
+                            <div class="form-group">
+                                <label>Chủ đề</label>
+                                <!--<select class="form-control" id="category">-->
+                                <!--<option>Chọn chủ đề</option>-->
+                                <!--</select>-->
+                                <tags-input id="category"
+                                            class="bootstrap"
+                                            ng-model="choosingCategory"
+                                            placeholder="Click vào để chọn chủ đề"
+                                            add-from-autocomplete-only="true"
+                                            on-tag-added="tagAdded($tag)"
+                                            on-tag-removed="tagRemoved($tag)">
+                                    <auto-complete source="category"
+                                                   min-length="0"
+                                                   debounce-delay="0"
+                                                   load-on-focus="true"
+                                                   load-on-empty="true"
+                                                   max-results-to-show="10"></auto-complete>
+                                </tags-input>
+                            </div>
+                            <div class="form-group">
+                                <label for="domain">Tên miền</label>
+                                <input type="text" class="form-control" id="domain" ng-model="url"
+                                       placeholder="http://">
+                                <span class="required">Tên miền phải có định dạng <span
+                                    style="color:#03a9f4">"http://"</span> hoặc <span
+                                    style="color:#03a9f4">"https://"</span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="maxphone">Số điện thoại tối đa</label>
+                                <input type="text" class="form-control number" id="maxphone" ng-model="maxPhone"
+                                       maxlength="10">
+                            </div>
+                            <!--<div class="form-group">-->
+                            <!--<label for="endday">Ngày kết thúc</label>-->
+                            <!--<input type="text" class="form-control" id="endday">-->
+                            <!--</div>-->
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Thêm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="siteInfoModal" tabindex="-1" role="dialog" aria-labelledby="siteLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-table-cell">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="siteLabel">Chỉnh sửa website</h4>
+                </div>
+
+                <form ng-submit="changeMaxPhone(current)">
+                    <div class="modal-body">
+                        <table>
+                            <div class="form-group">
+                                <label for="webname">Tên website</label>
+                                <input type="text" class="form-control" id="webname" ng-model="current.name" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Chủ đề</label>
+                                <!--<select class="form-control" id="category">-->
+                                <!--<option>Chọn chủ đề</option>-->
+                                <!--</select>-->
+                                <tags-input class="bootstrap"
+                                            ng-model="current.category"
+                                            placeholder="Click vào để chọn chủ đề"
+                                            add-from-autocomplete-only="true"
+                                            on-tag-added="tagAdded($tag)"
+                                            on-tag-removed="tagRemoved($tag)"
+                                            disabled="true"
+                                >
+                                    <auto-complete disabled
+                                                   source="category"
+                                                   min-length="0"
+                                                   debounce-delay="0"
+                                                   load-on-focus="true"
+                                                   load-on-empty="true"
+                                                   max-results-to-show="10"></auto-complete>
+                                </tags-input>
+                            </div>
+                            <div class="form-group">
+                                <label for="currentDomain">Tên miền</label>
+                                <input type="text" class="form-control" id="currentDomain" ng-model="current.url"
+                                       disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="currentMaxphone">Số điện thoại tối đa</label>
+                                <input type="text" class="form-control" id="currentMaxphone"
+                                       ng-model="current.maxPhone">
+                            </div>
+                            <!--<div class="form-group">-->
+                            <!--<label for="endday">Ngày kết thúc</label>-->
+                            <!--<input type="text" class="form-control" id="endday">-->
+                            <!--</div>-->
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-wrapper">
+    <header-template></header-template>
+</div>
+
+<div id="wrapper">
+
+    <div class="header" style="height: 64px;">
+
+
+    </div>
+    <!-- Sidebar -->
+    <sidebar-template></sidebar-template>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" ng-init="getSite()">
+        <div class="first-page-bar">
+            <h3><span class="fa fa-list"></span> Quản lý web site</h3>
+            <!--<p>-->
+            <!--&lt;!&ndash;<a class="" href="#" role="button">Trang chủ</a> >&ndash;&gt;-->
+            <!--&lt;!&ndash;<a class="" href="#" role="button">Quản lý website</a>&ndash;&gt;-->
+            <!--</p>-->
+        </div>
+        <div class="filter-page">
+
+            <div class="selection">
+                <div class="form-group">
+                    <label for="currentDomain">Tên trang</label>
+                    <input type="text" class="form-control" placeholder="Nhập từ khoá" ng-model="filterObject.name">
+                </div>
+            </div>
+            <div class="selection">
+                <div class="form-group">
+                    <label for="currentDomain">Tên miền</label>
+                    <input type="text" class="form-control" placeholder="Nhập từ khoá" ng-model="filterObject.url">
+                </div>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+        <div class="filter-page">
+            <button class="btn-primary btn" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-plus button-icon" aria-hidden="true"></i>Thêm website</button>
+        </div>
+
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên trang</th>
+                <th>Tên miền</th>
+                <th>Ngày bắt đầu</th>
+                <th>Số điện thoại</th>
+                <th>Ngày tạo</th>
+                <th>Mã nhúng</th>
+                <th>Trạng thái</th>
+                <th>Tuỳ chọn</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr dir-paginate="site in siteInformation.siteGet
+            | toArray:false
+            | filter:filterObject
+            | itemsPerPage: 10 as result  track by $index"
+                class="ng-cloak">
+                <td>{{$index+1}}</td>
+                <td>
+                    <a href="#" ng-click="bindingSite($index)" data-toggle="modal" data-target="#siteInfoModal">{{site.name}}</a>
+                </td>
+                <td><span><a href="{{site.url}}" target="_blank">{{site.url}}</a></span></td>
+
+                <td><span>{{ site.startDate | date : 'dd-MM-yyyy'}}</span></td>
+                <td><span>{{site.usedPhone+'/'+site.maxPhone}}</span></td>
+                <td><span>{{ site.createdAt | date : 'dd-MM-yyyy'}}</span></td>
+                <td>
+                    <button class="btn btn-success btn-copy-script" type="button" data-clipboard-action="copy"
+                            ng-click="copyScript(clipboardScript)">
+                        <i class="fa fa-clipboard button-icon" aria-hidden="true"></i>Copy
+                    </button>
+                </td>
+                <!--<td><span>{{site.isActive == true?"Hoạt động":"Tạm dừng"}}</span></td>-->
+                <td style="color: {{site.isActive == false ? 'red':'green'}}">
+                    <input class="isActiveCheckBox"
+                           type="checkbox"
+                           ng-checked="site.isActive == true"
+                           id="isActive{{$index}}"
+                           site-id="{{site._id}}"
+                           is-active="{{site.isActive}}">
+                    <label for="isActive{{$index}}">{{site.isActive == true?"Hoạt động":"Tạm dừng"}}</label></td>
+                <!--<td><a href="#" ng-click="deleteSite($index)">Xoá</a></td>-->
+                <td>
+                    <button class="btn btn-danger" type="button" ng-click="deleteSite(site)">
+                        <i class="fa fa-times button-icon" aria-hidden="true"></i>Xoá
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="9" ng-if="result.length==0">Không có kết quả</td>
+            </tr>
+            </tbody>
+        </table>
+        <!--End Table show content-->
+        <dir-pagination-controls
+            boundary-links="true"
+            on-page-change="pageChangeHandler(newPageNumber, oldPageNumber)"
+            template-url="assets/libs/angularUtils-pagination/dirPagination.tpl.html">
+
+        </dir-pagination-controls>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<footer-template></footer-template>

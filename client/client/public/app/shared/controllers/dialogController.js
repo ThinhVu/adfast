@@ -1,0 +1,1 @@
+"use strict";myApp.controller("dialogController",["$scope","$http","userService","$compile",function(o,a,e,l){o.changePasswordUrl="app/shared/template/changePasswordDialog.html",o.showDialog=function(o){$("#changePassModal").modal("show")}}]);

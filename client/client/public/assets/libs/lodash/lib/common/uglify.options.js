@@ -1,0 +1,1 @@
+"use strict";module.exports={compress:{collapse_vars:!0,negate_iife:!1,pure_getters:!0,unsafe:!0,warnings:!1},output:{ascii_only:!0,comments:/@license/,max_line_len:500}};

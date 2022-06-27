@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "script": "./server/index.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

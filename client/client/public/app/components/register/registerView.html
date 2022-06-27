@@ -1,0 +1,102 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Trang chủ</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/rules">Điều khoản</a></li>
+                <li><a href="/login">Đăng nhập</a></li>
+                <li><a href="/register">Đăng ký</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="register-form">
+    <div class="login-header">
+        <h2>Đăng ký</h2>
+    </div>
+    <form ng-submit="RegisterUser()">
+        <div class="login-body">
+            <div class="form-group">
+                <label for="usr">Tài Khoản:</label>
+                <input type="text" class="form-control" id="usr" ng-model="username">
+            </div>
+            <div class="form-group">
+                <label for="usr">Số điện thoại:</label>
+                <input type="text" class="form-control" id="sdt" ng-model="phone">
+            </div>
+            <div class="form-group">
+                <label for="usr">Mail:</label>
+                <input type="text" class="form-control" id="mail" ng-model="email">
+            </div>
+            <div class="form-group">
+                <label for="passRegister">Mật khẩu:</label>
+                <input type="password" class="form-control" id="passRegister" ng-model="password">
+            </div>
+            <div class="form-group">
+                <label for="reEnterRegister">Xác nhật mật khẩu:</label>
+                <input type="password" class="form-control" id="reEnterRegister">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="rules" ng-model="rules"/>
+                <label for="rules">Đồng ý với <a href="/rules" target="_blank">điểu khoản</a> của chúng tôi</label>
+            </div>
+            <div class="submit-div text-right">
+                <button type="submit" ng-disabled="rules!=true" class="btn btn-primary text-right register-button">Đăng ký</button>
+            </div>
+        </div>
+    </form>
+    <div class="login-footer">
+        <div class="new-one">
+            <span>Quay lại trang đăng nhập </span><a href="/login">tài khoản!</a>
+        </div>
+    </div>
+</div>
+<div class="main-footer white footer-auth">
+    <div class="container">
+        <div class="column logo contact hidden-xs">
+            <a href="/">
+                <img src="assets/img/mobile-phone.png">
+            </a>
+        </div>
+        <div class="column contact">
+            <img src="assets/img/icon-mail.png"><br>
+            <p>wemobile.crm@gmail.com</p>
+        </div>
+        <div class="column contact">
+            <img src="assets/img/icon-phone.png"><br>
+            <p>0166.337.0342</p>
+        </div>
+        <div class="column contact  hidden-xs">
+            <img src="assets/img/icon-address.png"><br>
+            <p>Duy Tân - Cầu Giấy - Hà Nội</p>
+        </div>
+        <div class="column joinwithus hidden-xs">
+            <strong style="color: black">Join us on</strong>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/1191206590914518/" target="_blank">
+                        <img src="assets/img/facebook-grey.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/google-grey.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/instagram-grey.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/youtobe.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

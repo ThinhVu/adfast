@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d562cbc7-5ac9-41be-8ffb-73cd43c23770" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/user/user.controler.js" afterPath="$PROJECT_DIR$/server/api/user/user.controler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/user/user.model.js" afterPath="$PROJECT_DIR$/server/api/user/user.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/email.config.js" afterPath="$PROJECT_DIR$/server/config/email.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/environment/development.js" afterPath="$PROJECT_DIR$/server/config/environment/development.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/environment/index.js" afterPath="$PROJECT_DIR$/server/config/environment/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/environment/production.js" afterPath="$PROJECT_DIR$/server/config/environment/production.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/mongo-connect.js" afterPath="$PROJECT_DIR$/server/config/mongo-connect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/index.js" afterPath="$PROJECT_DIR$/server/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/index.js" afterPath="$PROJECT_DIR$/server/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/manage.router.js" afterPath="$PROJECT_DIR$/server/routes/manage.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/app.js" afterPath="$PROJECT_DIR$/../AdFastUI/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/app.routes.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/app.routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/home/homeView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/home/homeView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/introducing/introView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/introducing/introView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/login/loginView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/login/loginView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/plan/planView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/plan/planView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/priceshow/priceView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/priceshow/priceView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/register/registerView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/register/registerView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/rules/rulesView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/rules/rulesView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/site/siteView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/site/siteView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/traffic/trafficView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/traffic/trafficView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/transaction/transactionView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/transaction/transactionView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/user/userPasswordView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/components/user/userPasswordView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/config/config.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/config/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/changePasswordDialog.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/changePasswordDialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/footerTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/footerTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/headerTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/headerTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/sidebarTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/sidebarTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/whiteFooterTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/app/shared/template/whiteFooterTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angular-recaptcha/demo/usage.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angular-recaptcha/demo/usage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angular/angular.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angularUtils-pagination/dirPagination.tpl.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/angularUtils-pagination/dirPagination.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/perf/index.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/perf/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/backbone.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/backbone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/fp.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/fp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/index.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/underscore.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/test/underscore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/vendor/firebug-lite/skin/xp/firebug.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/assets/libs/lodash/vendor/firebug-lite/skin/xp/firebug.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/index.view.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/index.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/public/activeAccountSuccess.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/public/activeAccountSuccess.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo1.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo2.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/public/public/demo2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/app.routes.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/app.routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/home/homeView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/home/homeView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/introducing/introView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/introducing/introView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/login/loginView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/login/loginView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/priceshow/priceView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/priceshow/priceView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/register/registerView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/register/registerView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/rules/rulesView.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/components/rules/rulesView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/config/config.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/config/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/services/authenticationService.js" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/services/authenticationService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/footerTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/footerTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/headerTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/headerTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/whiteFooterTemplate.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/app/shared/template/whiteFooterTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/index.view.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/index.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/public/activeAccountSuccess.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/public/activeAccountSuccess.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo1.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo2.html" afterPath="$PROJECT_DIR$/../AdFastUI/client/src/public/demo2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AdFastUI/package.json" afterPath="$PROJECT_DIR$/../AdFastUI/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/server/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/config/environment/production.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/config/environment/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static.router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/static.router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-86">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/manage.router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/auth/auth.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Lỗi hệ thống</find>
+      <find>production</find>
+      <find>index.view.html</find>
+      <find>index.view</find>
+      <find>cors</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/server/api/user/user.controler.js" />
+        <option value="$PROJECT_DIR$/server/api/user/user.model.js" />
+        <option value="$PROJECT_DIR$/server/config/environment/index.js" />
+        <option value="$PROJECT_DIR$/server/config/email.config.js" />
+        <option value="$PROJECT_DIR$/server/config/environment/production.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/routes/manage.router.js" />
+        <option value="$PROJECT_DIR$/dist/server/config/express.js" />
+        <option value="$PROJECT_DIR$/server/routes/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.babel.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>lint:server</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>server:copy-asset-server</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>server:save-package</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>remove-build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>private-share:build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compile-es6</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>server:build</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/dist/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/dist/package.json" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdFastServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdFastServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.mobile-crm-dev">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="mobile-crm-dev" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="server/index.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+    <configuration name="remove-build" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.babel.js</gulpfile>
+      <tasks>
+        <task>remove-build</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="server:build" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.babel.js</gulpfile>
+      <tasks>
+        <task>server:build</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="server:copy-asset-server" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.babel.js</gulpfile>
+      <tasks>
+        <task>server:copy-asset-server</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="server:save-package" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.babel.js</gulpfile>
+      <tasks>
+        <task>server:save-package</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.mobile-crm-dev" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.remove-build" />
+      <item index="2" class="java.lang.String" itemvalue="Gulp.js.server:build" />
+      <item index="3" class="java.lang.String" itemvalue="Gulp.js.server:copy-asset-server" />
+      <item index="4" class="java.lang.String" itemvalue="Gulp.js.server:save-package" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.server:build" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.server:save-package" />
+        <item index="2" class="java.lang.String" itemvalue="Gulp.js.server:copy-asset-server" />
+        <item index="3" class="java.lang.String" itemvalue="Gulp.js.remove-build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SFStoredExecutionPersistentComponent">
+    <executions>
+      <execution name="Default" sourceToExecute="" />
+    </executions>
+    <lastSelectedExecutionName>Default</lastSelectedExecutionName>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d562cbc7-5ac9-41be-8ffb-73cd43c23770" name="Default" comment="" />
+      <created>1503241377518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503241377518</updated>
+      <workItem from="1503241378677" duration="2181000" />
+      <workItem from="1503244888995" duration="3224000" />
+      <workItem from="1503251593543" duration="222000" />
+      <workItem from="1503253996170" duration="96000" />
+      <workItem from="1503254749136" duration="293000" />
+      <workItem from="1503278738800" duration="816000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6832000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49753347" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22551093" sideWeight="0.50941175" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22551093" sideWeight="0.49058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6211765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.49753347" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>62</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>55</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/components/app/middlewares/support.middleware.js</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/components/app/middlewares/support.middleware.js</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>63</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>37</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/server/api/user/user.controler.js</url>
+          <line>60</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="user" language="JavaScript" />
+        <watch expression="req.body.email.trim()" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="110" column="18" lean-forward="true" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/components/app/constants/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/email.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="73" lean-forward="true" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="162" column="26" lean-forward="false" selection-start-line="162" selection-start-column="26" selection-end-line="162" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/user.controler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/components/app/middlewares/support.middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/environment/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/failure/failure.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="73" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/user.controler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/components/app/middlewares/support.middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="110" column="18" lean-forward="false" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/components/app/constants/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/email.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/environment/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/static.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/config/production.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/development.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/mongo-connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/production.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem_production.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/routes/manage.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/test.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/static.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/manage.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/auth/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/environment/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/environment/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="0" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="\w+\.?\w+@\w{4,8}\.\w{2,4}|d" />
+        <entry key="text" value="manhhipa12@gmail.com" />
+      </map>
+    </option>
+  </component>
+</project>

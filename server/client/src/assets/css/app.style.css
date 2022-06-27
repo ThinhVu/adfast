@@ -1,0 +1,14 @@
+@import "../libs/font-awesome/css/font-awesome.css";
+@import "../libs/bootstrap/dist/css/bootstrap.css";
+
+h1 {
+    color: red;
+}
+
+div.content {
+    background-color: transparent;
+}
+
+#h2 ul li {
+    background-position: center;
+}

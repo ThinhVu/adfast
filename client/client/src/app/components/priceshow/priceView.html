@@ -1,0 +1,136 @@
+<!--<link rel="stylesheet" href="../../../assets/css/jssor-slider.css">-->
+<!--<script src="../../../assets/js/jssor.slider-22.1.9.min.js"></script>-->
+<div class="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">WEMOBILE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/rules">Điều khoản</a></li>
+                    <!--<li><a href="/price">Bảng giá</a></li>-->
+                    <li><a href="/login">Đăng nhập</a></li>
+                    <li><a href="/register">Đăng ký</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="section main">
+    <div class="container">
+        <h1>Hãy lựa chọn gói cước phù hợp với bạn</h1>
+        <div class="price-show">
+            <div class="row">
+                <div class="col-md-3 col-sm-3" ng-repeat="plan in siteInformation.planGet">
+                    <div class="package package-1">
+                        <div class="package-title">
+                            {{plan.name}}
+                        </div>
+                        <div class="package-content">
+                            <table class="table table-stripe">
+                                <tr>
+                                    <th>Số thuê bao</th>
+                                    <td>{{plan.maxPhone}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Viettel</th>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <th>Mobiphone</th>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <th>Vinaphone</th>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <th>Hạn sử dụng</th>
+                                    <td>{{plan.dayDuration}} ngày</td>
+                                </tr>
+                                <tr>
+                                    <th>Giá</th>
+                                    <td>{{plan.price | currency:"":0}} - VNĐ</td>
+                                </tr>
+                            </table>
+                            <!--<p>Số thuê bao: 100 </p>-->
+                            <!--<p>Viettel: có</p>-->
+                            <!--<p>Mobiphone: có</p>-->
+                            <!--<p>Vinaphone: có</p>-->
+                            <!--<p>Hạn sử dụng: </p>-->
+                            <!--<p>Giá: </p>-->
+                        </div>
+                        <div class="package-submit">
+                            <button class="btn btn-lg">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="section">
+    <div class="container">
+        <div class="advisory">
+            <h2 class="text-center">Tư vấn 24/7</h2>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <img src="../../../assets/img/Skype Filled-50.png">
+                    <h4>dovancanh_dev</h4>
+                    <!--<p>Với đội ngũ nhiếp ảnh chuyên nghiệp sẽ mang lại những bức ảnh chất lượng nhất cho bạn-->
+                    <!--</p>-->
+                </div>
+                <div class="col-sm-4">
+                    <img src="../../../assets/img/Phone Filled-50.png">
+                    <h4>0166.337.0342</h4>
+                    <!--<p>-->
+                    <!--Takeit giúp bạn tiết kiệm chi phí tối đa-->
+                    <!--</p>-->
+                </div>
+                <div class="col-sm-4">
+                    <img src="../../../assets/img/Message Filled-50.png">
+                    <h4>wemobile.crm@gmail.com</h4>
+                    <!--<p>-->
+                    <!--Takeit luôn đảm bảo quyền lợi cho khách hàng, lấy uy tín làm đầu-->
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="logo col-sm-2"><img src="../../../assets/img/mobile-phone.png"></div>
+            <div class="infomation col-sm-5 text-left">
+                <ul>
+                    <li>Địa chỉ: Văn Tiến Dũng</li>
+                    <li>Số điện thoại: 0977438191</li>
+                    <li>Mail: takeitchanel@gmail.com</li>
+                </ul>
+            </div>
+            <div class="redirect-link col-sm-5">
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="modal fade" id="planInfoModal" tabindex="-1" role="dialog" aria-labelledby="siteLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-table-cell">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="siteLabel">Thông tin gói cước</h4>
+                </div>
+                <form ng-submit="createSite()">
+                    <div class="modal-body">
+                        <table class="table table-bordered table-striped table-hover table-center-ad">
+                            <tr>
+                                <th>Tên gói cước</th>
+                                <td>{{currentPlan.name}}</td>
+                            </tr>
+                            <tr>
+                                <th>Số ngày tối đa</th>
+                                <td>{{currentPlan.dayDuration}} ngày</td>
+                            </tr>
+                            <tr>
+                                <th>Số thuê bao</th>
+                                <td>{{currentPlan.maxPhone}} thuê bao</td>
+                            </tr>
+                            <tr>
+                                <th>Giá</th>
+                                <td>{{currentPlan.price | currency:"":0}} VNĐ</td>
+                            </tr>
+                            <tr>
+                                <th>Ghi chú</th>
+                                <td>{{currentPlan.description}}</td>
+                            </tr>
+                        </table>
+                        <h4>Vui lòng liên hệ số điện thoại <span style="color: #03a9f4">096.660.21.30</span> để đăng ký
+                        </h4>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-wrapper">
+    <header-template></header-template>
+</div>
+<div id="wrapper">
+    <div class="header" style="height: 64px;">
+    </div>
+    <sidebar-template></sidebar-template>
+    <div id="page-content-wrapper">
+        <div class="first-page-bar">
+            <h3><span class="fa fa-list"></span> Thông tin gói cước</h3>
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên gói</th>
+                <th>Số ngày sử dụng</th>
+                <th>Số thuê bao</th>
+                <th>Giá thành</th>
+                <th>Ghi chú</th>
+                <th>Đăng ký</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="plan in siteInformation.planGet">
+                <td>{{$index+1}}</td>
+                <td><span> {{plan.name}} </span></td>
+                <td><span>{{plan.dayDuration}} ngày</span></td>
+                <td><span>{{plan.maxPhone}} thuê bao</span></td>
+                <td><span>{{plan.price | currency:"":0}} - VNĐ</span></td>
+                <td><span>{{plan.description}}</span></td>
+                <td>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#planInfoModal"
+                            ng-click="bindPlan(plan)">
+                        <i class="fa fa-shopping-cart button-icon" aria-hidden="true"></i>Đăng ký
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer-template></footer-template>

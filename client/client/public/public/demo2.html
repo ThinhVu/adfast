@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WeMobile Mobile Solution</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='http://api.adfast.tech:8585/elpis.loader.js'></script>
+	<script>$(document).ready(function () {
+		Elpis.Runner.start();
+	});</script>
+	<script src="../assets/libs/mobile-detect/mobile-detect.js"></script>
+</head>
+<body style="text-align: center;">
+<script>
+	var md = new MobileDetect(window.navigator.userAgent);
+	if (md.mobile()||md.phone()||md.tablet()) {
+		document.write(
+			"<h1>Xin chào quý khách V2 - SAMPLE</h1>" +
+			"<p>Vui lòng liên hệ số điện thoại 0165.685.0760 để được tư vấn báo giá</p>")
+	} else {
+		document.write(
+			"<h1>Xin chào quý khách V2 - SAMPLE</h1>" +
+			"<p>Vui lòng liên hệ số điện thoại 0165.685.0760 để được tư vấn báo giá</p>")
+	}
+</script>
+</body>
+</html>
